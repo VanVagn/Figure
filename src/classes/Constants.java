@@ -1,0 +1,32 @@
+package classes;
+
+public interface Constants {
+    int AMOUNT_OF_POINTS_CIRCLE = 2;
+    int AMOUNT_OF_POINTS_FIGURE = 0;
+    int AMOUNT_OF_POINTS_SQUARE = 4;
+
+    int SECOND_DEGREE = 2;
+    int KOEF_PERIMETR_CIRCLE = 2;
+
+    int FIRST_POINT = 0;
+    int SECOND_POINT = 1;
+    int THIRD_POINT = 2;
+    int FOURTH_POINT = 3;
+
+    int FIRST_POINT_XCORDINATE = 0;
+    int FIRST_POINT_YCORDINATE = 1;
+    int FIRST_POINT_ZCORDINATE = 2;
+
+    int SECOND_POINT_XCORDINATE = 0;
+    int SECOND_POINT_YCORDINATE = 1;
+    int SECOND_POINT_ZCORDINATE = 2;
+
+    int THIRD_POINT_XCORDINATE = 0;
+    int THIRD_POINT_YCORDINATE = 1;
+    int THIRD_POINT_ZCORDINATE = 2;
+
+    int FOURTH_POINT_XCORDINATE = 0;
+    int FOURTH_POINT_YCORDINATE = 1;
+
+
+}
