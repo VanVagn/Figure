@@ -1,6 +1,5 @@
-package classes.Extend;
-import classes.Figure;
-import classes.Points;
+package github.com.figure.classes;
+import github.com.classes.Points;
 
 public class Rectangle extends Figure {
 

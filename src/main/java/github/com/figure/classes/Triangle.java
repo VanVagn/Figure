@@ -1,7 +1,6 @@
-package classes.Extend;
+package github.com.figure.classes;
 
-import classes.Figure;
-import classes.Points;
+import github.com.classes.Points;
 
 public class Triangle extends Figure {
 

@@ -1,4 +1,7 @@
-package classes;
+package github.com.figure.classes;
+
+import github.com.constains.Constants;
+import github.com.classes.Points;
 
 public class Figure {
 

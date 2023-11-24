@@ -1,4 +1,4 @@
-package classes;
+package github.com.constains;
 
 public interface Constants {
     int AMOUNT_OF_POINTS_CIRCLE = 2;

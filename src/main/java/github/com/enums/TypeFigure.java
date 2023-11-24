@@ -1,4 +1,4 @@
-package classes;
+package github.com.enums;
 
 public enum TypeFigure {
     FIGURE,

@@ -1,8 +1,10 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 import classes.*;
-import classes.Extend.*;
-import classes.Figure.*;
+import github.com.figure.classes.Figure;
+import github.com.classes.Points;
+import github.com.enums.TypeFigure;
+import github.com.figure.classes.*;
 
 public class Main {
 

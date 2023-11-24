@@ -1,7 +1,6 @@
-package classes.Extend;
-import classes.Constants;
-import classes.Figure;
-import classes.Points;
+package github.com.figure.classes;
+import github.com.constains.Constants;
+import github.com.classes.Points;
 
 public class Square extends Figure implements Constants {
 

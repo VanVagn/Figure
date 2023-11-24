@@ -1,4 +1,4 @@
-package classes;
+package github.com.classes;
 import java.util.ArrayList;
 
 public class Points {

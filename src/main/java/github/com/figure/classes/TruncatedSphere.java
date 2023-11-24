@@ -1,24 +1,15 @@
-package classes.Extend;
+package github.com.figure.classes;
+import github.com.classes.Points;
 
-import classes.Figure;
-import classes.Points;
+public class TruncatedSphere extends Figure {
 
-public class Sphere extends Figure {
-
-    public Sphere(Points points) {
+    public TruncatedSphere(Points points) {
         super(points);
-    }
-
-    public double radius() {
-        double xcordinate = points.getPoint(0,0) - points.getPoint(1,0);
-        double ycordinate = points.getPoint(0,1) - points.getPoint(1,1);
-        double zcordinate = points.getPoint(0,2) - points.getPoint(1,2);
-        double help = Math.pow(xcordinate, 2) + Math.pow(ycordinate, 2) + Math.pow(zcordinate, 2);
-        return Math.sqrt(help);
     }
 
     @Override
     public boolean isValid() {
+
         boolean validation = false;
         if (points.getLength() == 2) {
             if (radius() > 0) {
@@ -38,7 +29,16 @@ public class Sphere extends Figure {
 
     @Override
     public void square() {
-        double result = 4 * Math.PI * Math.pow(radius(), 2);
+        double high = radius() - Math.abs(points.getPoint(2, 2));
+        double result = 4 * Math.PI * Math.pow(radius(), 2) - 2 * Math.PI * radius() * high;
         System.out.printf("The figure area - %.2f\n", result);
+    }
+
+    public double radius() {
+        double xcordinate = points.getPoint(0,0) - points.getPoint(1,0);
+        double ycordinate = points.getPoint(0,1) - points.getPoint(1,1);
+        double zcordinate = points.getPoint(0,2) - points.getPoint(1,2);
+        double help = Math.pow(xcordinate, 2) + Math.pow(ycordinate, 2) + Math.pow(zcordinate, 2);
+        return Math.sqrt(help);
     }
 }

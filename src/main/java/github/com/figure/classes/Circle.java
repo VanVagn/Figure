@@ -1,7 +1,6 @@
-package classes.Extend;
-import classes.Figure;
-import classes.Constants;
-import classes.Points;
+package github.com.figure.classes;
+import github.com.constains.Constants;
+import github.com.classes.Points;
 
 public class Circle extends Figure implements Constants {
 
