@@ -1,9 +1,9 @@
 package classes.Extend;
-
 import classes.Figure;
 import classes.Points;
 
 public class Parallelogram extends Figure {
+
     public Parallelogram(Points points) {
         super(points);
     }
@@ -94,5 +94,4 @@ public class Parallelogram extends Figure {
         double result = (firstSide + secondSide) * 2;
         System.out.printf("The figure perimeter - %.2f\n", result);
     }
-
 }

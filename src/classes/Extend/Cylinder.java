@@ -1,13 +1,12 @@
 package classes.Extend;
-
 import classes.Figure;
 import classes.Points;
 
 public class Cylinder extends Figure {
+
     public Cylinder(Points points) {
         super(points);
     }
-
 
     @Override
     public boolean isValid() {
@@ -57,8 +56,4 @@ public class Cylinder extends Figure {
         System.out.printf("The figure area - %.2f\n", result);
     }
 
-    @Override
-    public void perimeter() {
-        System.out.println("The figure has no perimeter");
-    }
 }

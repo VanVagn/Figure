@@ -1,17 +1,16 @@
 package classes.Extend;
-
 import classes.Figure;
 import classes.Constants;
 import classes.Points;
 
-public class Circle extends Figure implements Constants{
+public class Circle extends Figure implements Constants {
+
     public Circle(Points points) {
         super(points);
     }
 
     @Override
     public boolean isValid() {
-
         boolean validation = false;
         if (points.getLength() == AMOUNT_OF_POINTS_CIRCLE) {
             if (radius() > 0) {
@@ -40,6 +39,7 @@ public class Circle extends Figure implements Constants{
         double result = KOEF_PERIMETR_CIRCLE * Math.PI * radius();
         System.out.printf("The figure perimeter - %.2f\n", result);
     }
+
     public double radius() {
         double xcordinate = points.getPoint(FIRST_POINT, FIRST_POINT_XCORDINATE) - points.getPoint(SECOND_POINT,SECOND_POINT_XCORDINATE);
         double ycordinate = points.getPoint(FIRST_POINT,FIRST_POINT_YCORDINATE) - points.getPoint(SECOND_POINT,SECOND_POINT_YCORDINATE);

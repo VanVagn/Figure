@@ -1,10 +1,10 @@
 package classes.Extend;
-
 import classes.Constants;
 import classes.Figure;
 import classes.Points;
 
 public class Square extends Figure implements Constants {
+
     public Square(Points points) {
         super(points);
     }
@@ -65,5 +65,4 @@ public class Square extends Figure implements Constants {
         double result = firstSide * 4;
         System.out.printf("The figure perimeter - %.2f\n", result);
     }
-
 }

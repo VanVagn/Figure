@@ -1,9 +1,9 @@
 package classes.Extend;
-
 import classes.Figure;
 import classes.Points;
 
 public class Rectangle extends Figure {
+
     public Rectangle(Points points) {
         super(points);
     }

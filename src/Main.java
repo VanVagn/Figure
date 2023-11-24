@@ -1,14 +1,15 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-
 import classes.*;
 import classes.Extend.*;
 import classes.Figure.*;
 
 public class Main {
+
     public static void main(String[] args) {
         Figure figure = inputAndOutputFigure();
     }
+
     public static Figure inputAndOutputFigure() {
         Scanner scanner = new Scanner(System.in);
         while (true) {

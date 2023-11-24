@@ -4,6 +4,7 @@ import classes.Figure;
 import classes.Points;
 
 public class Triangle extends Figure {
+
     public Triangle(Points points) {
         super(points);
     }
@@ -40,6 +41,7 @@ public class Triangle extends Figure {
         }
         return validation;
     }
+
     @Override
     public void perimeter() {
 

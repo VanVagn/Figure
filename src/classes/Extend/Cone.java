@@ -1,16 +1,15 @@
 package classes.Extend;
-
 import classes.Figure;
 import classes.Points;
 
 public class Cone extends Figure {
+
     public Cone(Points points) {
         super(points);
     }
 
     @Override
     public boolean isValid() {
-
         if (points.getLength() == 3) {
             for (int i = 0; i < 3; i++) {
                 double x = points.getPoint(i, 0);
@@ -47,10 +46,5 @@ public class Cone extends Figure {
 
         double result = Math.PI * Math.pow(radiuc, 2) + Math.PI * radiuc * generatrix;
         System.out.printf("The figure area - %.2f\n", result);
-    }
-
-    @Override
-    public void perimeter() {
-        System.out.println("The figure has no perimeter");
     }
 }

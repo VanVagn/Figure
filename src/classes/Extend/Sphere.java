@@ -4,6 +4,7 @@ import classes.Figure;
 import classes.Points;
 
 public class Sphere extends Figure {
+
     public Sphere(Points points) {
         super(points);
     }
@@ -15,9 +16,9 @@ public class Sphere extends Figure {
         double help = Math.pow(xcordinate, 2) + Math.pow(ycordinate, 2) + Math.pow(zcordinate, 2);
         return Math.sqrt(help);
     }
+
     @Override
     public boolean isValid() {
-
         boolean validation = false;
         if (points.getLength() == 2) {
             if (radius() > 0) {
@@ -39,10 +40,5 @@ public class Sphere extends Figure {
     public void square() {
         double result = 4 * Math.PI * Math.pow(radius(), 2);
         System.out.printf("The figure area - %.2f\n", result);
-    }
-
-    @Override
-    public void perimeter() {
-        System.out.println("The figure has no perimeter");
     }
 }

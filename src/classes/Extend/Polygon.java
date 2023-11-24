@@ -1,9 +1,9 @@
 package classes.Extend;
-
 import classes.Figure;
 import classes.Points;
 
 public class Polygon extends Figure {
+
     public Polygon(Points points) {
         super(points);
     }
@@ -50,6 +50,4 @@ public class Polygon extends Figure {
         double result = points.getLength() * firstSide;
         System.out.printf("The figure perimeter - %.2f\n", result);
     }
-
-
 }
