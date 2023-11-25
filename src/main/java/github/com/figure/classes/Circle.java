@@ -40,8 +40,8 @@ public class Circle extends Figure implements Constants {
     }
 
     public double radius() {
-        double xcordinate = points.getPoint(FIRST_POINT, FIRST_POINT_XCORDINATE) - points.getPoint(SECOND_POINT,SECOND_POINT_XCORDINATE);
-        double ycordinate = points.getPoint(FIRST_POINT,FIRST_POINT_YCORDINATE) - points.getPoint(SECOND_POINT,SECOND_POINT_YCORDINATE);
+        double xcordinate = points.getPoint(FIRST_POINT, FIRST_POINT_XCORDINATE) - points.getPoint(SECOND_POINT, SECOND_POINT_XCORDINATE);
+        double ycordinate = points.getPoint(FIRST_POINT, FIRST_POINT_YCORDINATE) - points.getPoint(SECOND_POINT, SECOND_POINT_YCORDINATE);
         double radiusSecondDegree = Math.pow(xcordinate, SECOND_DEGREE) + Math.pow(ycordinate, SECOND_DEGREE);
         return Math.sqrt(radiusSecondDegree);
     }

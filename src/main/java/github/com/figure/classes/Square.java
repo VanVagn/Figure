@@ -32,7 +32,10 @@ public class Square extends Figure implements Constants {
 
             double firstDiagonal = Math.sqrt(Math.pow(firstSide, 2) + Math.pow(secondSide, 2));
             double secondDiagonal = Math.sqrt(Math.pow(thirdSide, 2) + Math.pow(fourthSide, 2));
-            validation = (firstSide == secondSide) & (secondSide == thirdSide) & (thirdSide == fourthSide) & (firstDiagonal == secondDiagonal);
+            validation = (firstSide == secondSide)
+                       & (secondSide == thirdSide)
+                       & (thirdSide == fourthSide)
+                       & (firstDiagonal == secondDiagonal);
             if (validation) {
                 System.out.println("The figure is valid");
             } else {

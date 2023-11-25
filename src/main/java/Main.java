@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-import classes.*;
 import github.com.figure.classes.Figure;
 import github.com.classes.Points;
 import github.com.enums.TypeFigure;
@@ -124,7 +123,7 @@ public class Main {
             String[] strPoints = line.split(" ");
             ArrayList<Integer> point = new ArrayList<Integer>();
             for (int i = 0; i < strPoints.length; i++) {
-                if (strPoints[i].matches("\\d+")) {
+                if (strPoints[i].matches("-?\\d+")) {
                     point.add(Integer.parseInt(strPoints[i]));
                 } else {
                     System.out.println("Please, retype");

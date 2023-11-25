@@ -4,6 +4,17 @@ public interface Constants {
     int AMOUNT_OF_POINTS_CIRCLE = 2;
     int AMOUNT_OF_POINTS_FIGURE = 0;
     int AMOUNT_OF_POINTS_SQUARE = 4;
+    int AMOUNT_OF_POINTS_CONE = 3;
+    int AMOUNT_OF_POINTS_CYLINDER = 3;
+    int AMOUNT_OF_POINTS_PARALLELOGRAM = 4;
+    int AMOUNT_OF_POINTS_RECTANGLE = 4;
+    int AMOUNT_OF_POINTS_SPHERE = 2;
+    int AMOUNT_OF_POINTS_TRIANGLE = 3;
+    int AMOUNT_OF_POINTS_TRUNCATED_SPHERE = 3;
+
+    int XCORDINATE = 0;
+    int YCORDINATE = 1;
+    int ZCORDINATE = 2;
 
     int SECOND_DEGREE = 2;
     int KOEF_PERIMETR_CIRCLE = 2;
@@ -27,6 +38,8 @@ public interface Constants {
 
     int FOURTH_POINT_XCORDINATE = 0;
     int FOURTH_POINT_YCORDINATE = 1;
+
+    double ONE_HUNDRED_EIGHTY_DEGREES = 180.0;
 
 
 }
