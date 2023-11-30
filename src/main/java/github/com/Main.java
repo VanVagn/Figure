@@ -1,3 +1,5 @@
+package github.com;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 import github.com.figure.classes.Figure;
