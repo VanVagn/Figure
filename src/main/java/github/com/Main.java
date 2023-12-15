@@ -17,103 +17,110 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             String input = scanner.nextLine();
-            TypeFigure typeFigure = TypeFigure.valueOf(input);
-            switch (typeFigure) {
-                case END:
-                    return null;
-                case FIGURE:
-                    Points points = inputPoints(scanner);
-                    Figure figure = new Figure(points);
-                    if (figure.isValid()) {
-                        figure.perimeter();
-                        figure.square();
-                        return figure;
-                    }
-                    break;
-                case CIRCLE:
-                    points = inputPoints(scanner);
-                    figure = new Circle(points);
-                    if (figure.isValid()) {
-                        figure.perimeter();
-                        figure.square();
-                        return figure;
-                    }
-                    break;
-                case SQUARE:
-                    points = inputPoints(scanner);
-                    figure = new Square(points);
-                    if (figure.isValid()) {
-                        figure.perimeter();
-                        figure.square();
-                        return figure;
-                    }
-                    break;
-                case RECTANGLE:
-                    points = inputPoints(scanner);
-                    figure = new Rectangle(points);
-                    if (figure.isValid()) {
-                        figure.perimeter();
-                        figure.square();
-                        return figure;
+            TypeFigure typeFigure;
+            try {
+                 typeFigure = TypeFigure.valueOf(input);
+                switch (typeFigure) {
+                    case END:
+                        return null;
+                    case FIGURE:
+                        Points points = inputPoints(scanner);
+                        Figure figure = new Figure(points);
+                        if (figure.isValid()) {
+                            figure.perimeter();
+                            figure.square();
+                            return figure;
+                        }
+                        break;
+                    case CIRCLE:
+                        points = inputPoints(scanner);
+                        figure = new Circle(points);
+                        if (figure.isValid()) {
+                            figure.perimeter();
+                            figure.square();
+                            return figure;
+                        }
+                        break;
+                    case SQUARE:
+                        points = inputPoints(scanner);
+                        figure = new Square(points);
+                        if (figure.isValid()) {
+                            figure.perimeter();
+                            figure.square();
+                            return figure;
+                        }
+                        break;
+                    case RECTANGLE:
+                        points = inputPoints(scanner);
+                        figure = new Rectangle(points);
+                        if (figure.isValid()) {
+                            figure.perimeter();
+                            figure.square();
+                            return figure;
 
-                    }
-                case PARALLELOGRAM:
-                    points = inputPoints(scanner);
-                    figure = new Parallelogram(points);
-                    if (figure.isValid()) {
-                        figure.perimeter();
-                        figure.square();
-                        return figure;
-                    }
-                case TRIANGLE:
-                    points = inputPoints(scanner);
-                    figure = new Triangle(points);
-                    if (figure.isValid()) {
-                        figure.perimeter();
-                        figure.square();
-                        return figure;
-                    }
-                case POLYGON:
-                    points = inputPoints(scanner);
-                    figure = new Polygon(points);
-                    if (figure.isValid()) {
-                        figure.perimeter();
-                        figure.square();
-                        return figure;
-                    }
-                case TRUNCATED_SPHERE:
-                    points = inputPoints(scanner);
-                    figure = new TruncatedSphere(points);
-                    if (figure.isValid()) {
-                        figure.perimeter();
-                        figure.square();
-                        return figure;
-                    }
-                case CYLINDER:
-                    points = inputPoints(scanner);
-                    figure = new Cylinder(points);
-                    if (figure.isValid()) {
-                        figure.perimeter();
-                        figure.square();
-                        return figure;
-                    }
-                case CONE:
-                    points = inputPoints(scanner);
-                    figure = new Cone(points);
-                    if (figure.isValid()) {
-                        figure.perimeter();
-                        figure.square();
-                        return figure;
-                    }
-                case SPHERE:
-                    points = inputPoints(scanner);
-                    figure = new Sphere(points);
-                    if (figure.isValid()) {
-                        figure.perimeter();
-                        figure.square();
-                        return figure;
-                    }
+                        }
+                    case PARALLELOGRAM:
+                        points = inputPoints(scanner);
+                        figure = new Parallelogram(points);
+                        if (figure.isValid()) {
+                            figure.perimeter();
+                            figure.square();
+                            return figure;
+                        }
+                    case TRIANGLE:
+                        points = inputPoints(scanner);
+                        figure = new Triangle(points);
+                        if (figure.isValid()) {
+                            figure.perimeter();
+                            figure.square();
+                            return figure;
+                        }
+                    case POLYGON:
+                        points = inputPoints(scanner);
+                        figure = new Polygon(points);
+                        if (figure.isValid()) {
+                            figure.perimeter();
+                            figure.square();
+                            return figure;
+                        }
+                    case TRUNCATED_SPHERE:
+                        points = inputPoints(scanner);
+                        figure = new TruncatedSphere(points);
+                        if (figure.isValid()) {
+                            figure.perimeter();
+                            figure.square();
+                            return figure;
+                        }
+                    case CYLINDER:
+                        points = inputPoints(scanner);
+                        figure = new Cylinder(points);
+                        if (figure.isValid()) {
+                            figure.perimeter();
+                            figure.square();
+                            return figure;
+                        }
+                    case CONE:
+                        points = inputPoints(scanner);
+                        figure = new Cone(points);
+                        if (figure.isValid()) {
+                            figure.perimeter();
+                            figure.square();
+                            return figure;
+                        }
+                    case SPHERE:
+                        points = inputPoints(scanner);
+                        figure = new Sphere(points);
+                        if (figure.isValid()) {
+                            figure.perimeter();
+                            figure.square();
+                            return figure;
+                        }
+
+                }
+            } catch (IllegalArgumentException e) {
+                System.out.println("Incorrect name of figure");
             }
+
         }
     }
 

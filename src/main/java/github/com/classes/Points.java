@@ -14,7 +14,10 @@ public class Points {
         return points.get(indexOne).get(indexTwo);
     }
 
-    public int getLength() {
+    public int getLengthPoints() {
         return points.size();
+    }
+    public int getLengthCoordinates(int index) {
+        return points.get(index).size();
     }
 }

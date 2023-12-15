@@ -12,11 +12,8 @@ public class Figure {
     }
 
     public boolean isValid() {
-        if (points.getLength() == Constants.AMOUNT_OF_POINTS_FIGURE) {
-            System.out.println("The figure is figure");
-            return true;
-        }
-        return false;
+        System.out.println("The figure is figure");
+        return true;
     }
 
     public void square() {

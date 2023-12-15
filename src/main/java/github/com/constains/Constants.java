@@ -2,7 +2,6 @@ package github.com.constains;
 
 public interface Constants {
     int AMOUNT_OF_POINTS_CIRCLE = 2;
-    int AMOUNT_OF_POINTS_FIGURE = 0;
     int AMOUNT_OF_POINTS_SQUARE = 4;
     int AMOUNT_OF_POINTS_CONE = 3;
     int AMOUNT_OF_POINTS_CYLINDER = 3;
@@ -17,16 +16,15 @@ public interface Constants {
     int ZCORDINATE = 2;
 
     int SECOND_DEGREE = 2;
-    int KOEF_PERIMETR_CIRCLE = 2;
+    int KOEF_PERIMETR = 2;
+    int KOEF_SEGMENT = 2;
+    int KOEF_THEOREM_COS = 2;
+    int KOEF_SPHERE = 4;
 
     int FIRST_POINT = 0;
     int SECOND_POINT = 1;
     int THIRD_POINT = 2;
     int FOURTH_POINT = 3;
-
-    int FIRST_POINT_XCORDINATE = 0;
-    int FIRST_POINT_YCORDINATE = 1;
-    int FIRST_POINT_ZCORDINATE = 2;
 
     int SECOND_POINT_XCORDINATE = 0;
     int SECOND_POINT_YCORDINATE = 1;
@@ -40,6 +38,13 @@ public interface Constants {
     int FOURTH_POINT_YCORDINATE = 1;
 
     double ONE_HUNDRED_EIGHTY_DEGREES = 180.0;
+    double PI = 3.1415926535;
+    double POLU = 0.5;
+
+    int TWO_DIMENS = 2;
+    int THREE_DIMENS = 3;
+    int KOEF_CYLINDER = 2;
+    int MINIM_AMOUNT = 3;
 
 
 }
